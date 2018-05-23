@@ -24,28 +24,28 @@
 
 metadata {
     definition (name: "Xiaomi Temperature Humidity Sensor", namespace: "bspranger", author: "bspranger") {
-    capability "Temperature Measurement"
-    capability "Relative Humidity Measurement"
-    capability "Sensor"
-    capability "Battery"
-    capability "Health Check"
+        capability "Temperature Measurement"
+        capability "Relative Humidity Measurement"
+        capability "Sensor"
+        capability "Battery"
+        capability "Health Check"
 
-    attribute "lastCheckin", "String"
-    attribute "lastCheckinDate", "String"
-    attribute "maxTemp", "number"
-    attribute "minTemp", "number"
-    attribute "maxHumidity", "number"
-    attribute "minHumidity", "number"
-    attribute "multiAttributesReport", "String"
-    attribute "currentDay", "String"
-    attribute "batteryRuntime", "String"
+        attribute "lastCheckin", "String"
+        attribute "lastCheckinDate", "String"
+        attribute "maxTemp", "number"
+        attribute "minTemp", "number"
+        attribute "maxHumidity", "number"
+        attribute "minHumidity", "number"
+        attribute "multiAttributesReport", "String"
+        attribute "currentDay", "String"
+        attribute "batteryRuntime", "String"
 
-    fingerprint profileId: "0104", deviceId: "0302", inClusters: "0000,0001,0003,0009,0402,0405"
-    fingerprint profileId: "0104", deviceId: "5F01", inClusters: "0000,0003,0019,FFFF", outClusters: "0000,0003,0019, FFFF"
-    fingerprint profileId: "0104", deviceId: "5F01", inClusters: "0000,0003,0019,FFFF", outClusters: "0000,0003,0019, FFFF", manufacturer: "LUMI", model: "lumi.sensor_ht", deviceJoinName: "Xiaomi Temp Sensor"
+        fingerprint profileId: "0104", deviceId: "0302", inClusters: "0000,0001,0003,0009,0402,0405"
+        fingerprint profileId: "0104", deviceId: "5F01", inClusters: "0000,0003,0019,FFFF", outClusters: "0000,0003,0019, FFFF"
+        fingerprint profileId: "0104", deviceId: "5F01", inClusters: "0000,0003,0019,FFFF", outClusters: "0000,0003,0019, FFFF", manufacturer: "LUMI", model: "lumi.sensor_ht", deviceJoinName: "Xiaomi Temp Sensor"
 
-    command "resetBatteryRuntime"
-}
+        command "resetBatteryRuntime"
+    }
 
     // simulator metadata
     simulator {
